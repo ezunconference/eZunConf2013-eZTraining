@@ -1,0 +1,14 @@
+{% extends noLayout ? viewBaseLayout : "eztTrainingBundle::pagelayout.html.twig" %}
+
+{% block title %}
+   {{ parent() }}
+   My awesome homepage
+{% endblock %}
+
+
+
+{% block content %}
+
+   {{ render( controller( "eztTrainingBundle:Parts:getLastArticles", {"locationId": location.id } )) }}
+
+{% endblock %}

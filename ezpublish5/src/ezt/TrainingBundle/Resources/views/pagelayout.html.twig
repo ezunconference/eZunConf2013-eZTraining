@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title>{% block title %}Home{% endblock %}</title>
+</head>
+
+<body>
+
+    {% if app.security.token.authenticated %}
+        I'm connected !
+    {% else %}
+        I'm not :(
+    {% endif %}
+
+    <div id="navigation">
+        {{ render( controller( "eztTrainingBundle:Parts:getNav" ) ) }}
+    </div>
+
+
+    <div id="content">
+        {% block content %}
+	    {% if module_result %}
+		{{ module_result.content|raw }}
+    	    {% endif %}
+	{% endblock %}
+    </div>
+	<div>
+
+
+	</div>
+</body>
+</html>

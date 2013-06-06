@@ -1,0 +1,7 @@
+parameters:
+#    ezt_training.example.class: ezt\TrainingBundle\Example
+
+services:
+#    ezt_training.example:
+#        class: %ezt_training.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

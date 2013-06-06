@@ -1,0 +1,6 @@
+parameters:
+    secret: 18cad6aead4ba02ac330403cbc6da0c500a1a484
+    locale_fallback: en
+    # My awesome comment !
+    ezpublish_legacy.default.view_default_layout: 'eztTrainingBundle::pagelayout.html.twig'
+    ezpublish_legacy.ezdemo_site.module_default_layout: 'eztTrainingBundle::pagelayout.html.twig'

@@ -1,0 +1,18 @@
+
+{% for result in listLocation %}
+
+   {# my comment here
+      with multiple line
+      Awesome !
+   #}
+
+   <a href="{{ path( result ) }}">
+       {{ result.contentInfo.name }}
+   </a>
+
+   {{ path( "ez_urlalias", { "locationId": result.id } ) }}
+   <br />
+
+{% else %}
+   No result !
+{% endfor %}

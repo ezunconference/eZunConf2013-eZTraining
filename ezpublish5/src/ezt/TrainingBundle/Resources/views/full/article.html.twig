@@ -1,0 +1,17 @@
+{% extends noLayout ? viewBaseLayout : "eztTrainingBundle::pagelayout.html.twig" %}
+
+{% block title %} 
+
+{% endblock %}
+
+
+
+{% block content %}
+
+    <h2>{{ location.contentInfo.name }}</h2>
+
+    {{ ez_render_field( content, "intro" ) }}
+
+    {{ ez_render_field( content, "image", {parameters: {alias: "small" }} ) }}
+
+{% endblock %}

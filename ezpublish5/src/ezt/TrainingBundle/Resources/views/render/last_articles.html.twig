@@ -1,0 +1,10 @@
+{% for result in searchResult.searchHits %}
+
+    <a href="{{ path( "ez_urlalias", { "locationId": result.valueObject.contentInfo.mainLocationId } ) }}">
+    {{ result.valueObject.contentInfo.name }}
+    </a>
+    <br />
+
+{% else %}
+   No results !
+{% endfor %}
